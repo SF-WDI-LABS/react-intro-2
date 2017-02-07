@@ -11,6 +11,30 @@
 * Pass in data to a React component via `props`.
 * Modify the `state` of a React component through events.
 
+### Intro
+
+Before our break, we learned that React is a powerful and efficient front-end framework that emphasized performance and reusability of _components_, and that it utilizes _JSX_ for these components. This is what we had for our `Hello` component:
+
+```js
+// bring in React and Component instance from react
+import React, {Component} from 'react'
+
+// define our Hello component
+class Hello extends Component {
+  // what should the component render
+  render () {
+    // Make sure to return some UI
+    return (
+      <h1>Hello World!</h1>
+    )
+  }
+}
+
+export default Hello
+```
+
+Now we'll see what we can do to make this more practical, and introduce the React concepts of `props` and `state`. 
+
 ### Hello World: A Little Dynamic
 
 Our `Hello` component isn't too helpful. Let's make it more interesting.
