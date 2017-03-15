@@ -1,3 +1,5 @@
+<img src="https://cloud.githubusercontent.com/assets/6520345/23081189/8962462e-f508-11e6-88f1-4a3fa2ddca99.png" alt="cog" width= "50px"/>
+
 # Intro to React.js: Part 2
 
 ---
@@ -7,6 +9,7 @@
 ---
 
 ## Learning Objectives
+Developers will be able to:
 
 * Pass in data to a React component via `props`.
 * Modify the `state` of a React component through events.
@@ -33,7 +36,7 @@ class Hello extends Component {
 export default Hello
 ```
 
-Now we'll see what we can do to make this more practical, and introduce the React concepts of `props` and `state`. 
+Now we'll see what we can do to make this more practical, and introduce the React concepts of `props` and `state`.
 
 ### Hello World: A Little Dynamic
 
@@ -106,7 +109,7 @@ class Hello extends Component {
 ---
 
 
-## State 
+## State
 
 So we know about React properties, and how they relate to our component's data.
 * The thing is, `props` represent data that will be the same every time our component is rendered. What about data in our application that may change depending on user action?
