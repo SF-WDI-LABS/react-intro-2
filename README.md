@@ -2,7 +2,7 @@
 
 
 
-## Learning Objectives
+### Learning Objectives
 
 * Pass in data to a React component via `props`.
 * Modify the `state` of a React component through events.
@@ -185,7 +185,6 @@ class Hello extends Component {
 Whenever we run `.setState`, our component "diff's" the current DOM, and compares the Virtual DOM node with the updated state to the current DOM.
 * Only replaces the current DOM with parts that have changed.
 
----
 
 ## Closing
 
@@ -207,4 +206,3 @@ React, like Angular, is a powerful web framework that allows fast rendering and 
 * [Events](https://facebook.github.io/react/tips/dom-event-listeners.html)
 * [Forms](https://facebook.github.io/react/docs/forms.html)
 
----
