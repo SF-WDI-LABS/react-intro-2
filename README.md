@@ -1,10 +1,6 @@
-# Intro to React.js: Part 2
+# ![GA-Logo](https://camo.githubusercontent.com/6ce15b81c1f06d716d753a61f5db22375fa684da/68747470733a2f2f67612d646173682e73332e616d617a6f6e6177732e636f6d2f70726f64756374696f6e2f6173736574732f6c6f676f2d39663838616536633963333837313639306533333238306663663535376633332e706e67)Intro to React.js: Part 2
 
----
 
-![react-logo](./images/react-white-logo.png)
-
----
 
 ## Learning Objectives
 
@@ -103,7 +99,6 @@ class Hello extends Component {
 
 > **NOTE:** The return statement in `render` can only return one DOM element. You can, however, place multiple elements within a parent DOM element, like we do in the previous example with `<div>`.
 
----
 
 
 ## State 
@@ -148,14 +143,13 @@ Ok, we set an initial state. But how do we go about changing it?
 
 <details>
   <summary><strong>
-    Let's do that via a button click event. Where should we initialize it?
+    Let's do that via a button click event. Where do you think should we initialize it?
   </strong></summary>
 
-  > In the return value of our Post's `render` method.
+  > Inside the `JSX` of our return value! In Hello `render` method we can instantiate our event listeners. Notice the ultra-slick ES6 function.
 
 </details>
 
-<!-- AM: Modify this question. They don't know that event listeners are passed in as attributes yet. -->
 
 ```js
 class Hello extends Component {
