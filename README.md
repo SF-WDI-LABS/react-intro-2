@@ -9,7 +9,7 @@
 
 ### Intro
 
-Before our break, we learned that React is a powerful and efficient front-end framework that emphasized performance and reusability of _components_, and that it utilizes _JSX_ for these components. This is what we had for our `Hello` component:
+Before, we learned that React is a powerful and efficient front-end framework that emphasized performance and reusability of _components_, and that it utilizes _JSX_ for these components. This is what we had for our `Hello` component:
 
 ```js
 // bring in React and Component instance from react
@@ -29,7 +29,7 @@ class Hello extends Component {
 export default Hello
 ```
 
-Now we'll see what we can do to make this more practical, and introduce the React concepts of `props` and `state`. 
+Now we'll see what we can do to make this more practical, and introduce the React concepts of `props` and `state`.
 
 ### Hello World: A Little Dynamic
 
@@ -61,7 +61,7 @@ class Hello extends Component {
 }
 ```
 
-In the above example, we replaced "world" with `{this.props.name}`.
+In the above example, we replaced `world` with `{this.props.name}`.
 
 #### What are `.props`?
 
@@ -101,7 +101,7 @@ class Hello extends Component {
 
 
 
-## State 
+## State
 
 So we know about React properties, and how they relate to our component's data.
 * The thing is, `props` represent data that will be the same every time our component is rendered. What about data in our application that may change depending on user action?
@@ -138,12 +138,11 @@ class Hello extends Component {
 }
 ```
 
-Ok, we set an initial state. But how do we go about changing it?
-* We need to set up some sort of trigger event to change our counter.
+Ok, we set an initial state. But in order to change the state, we need to set up some sort of trigger event.
 
 <details>
   <summary><strong>
-    Let's do that via a button click event. Where do you think should we initialize it?
+    Let's do that via a button click event. Where do you think should we initialize that button click event?
   </strong></summary>
 
   > Inside the `JSX` of our return value! In Hello `render` method we can instantiate our event listeners. Notice the ultra-slick ES6 function.
@@ -182,8 +181,7 @@ class Hello extends Component {
 
 > Take a closer look at how this event is implemented. We use an attribute called `onClick` to define the behavior as to what happens when we click this particular button. As it's value, we're passing in an anonymous function that invokes handleClick, a function defined on this component.
 
-Whenever we run `.setState`, our component "diff's" the current DOM, and compares the Virtual DOM node with the updated state to the current DOM.
-* Only replaces the current DOM with parts that have changed.
+Whenever we run `.setState`, our component does a "diff", comparing the Virtual DOM node with the updated state to the current DOM. It only replaces the current DOM with parts that have changed.
 
 
 ## Closing
@@ -205,4 +203,3 @@ React, like Angular, is a powerful web framework that allows fast rendering and 
 * [API/Axios](https://www.npmjs.com/package/axios)
 * [Events](https://facebook.github.io/react/tips/dom-event-listeners.html)
 * [Forms](https://facebook.github.io/react/docs/forms.html)
-
