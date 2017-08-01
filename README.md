@@ -5,7 +5,8 @@
 ### Learning Objectives
 
 * Pass in data to a React component via `props`.
-* Modify the `state` of a React component through events.
+* Modify the `state` of a React component through events using `setState`.
+* Describe the setup of "downward data flow" that will allow components to share information and maintain a single idea about the state of the app.
 
 ### Intro
 
@@ -104,11 +105,11 @@ class Hello extends Component {
 ## State
 
 So we know about React properties, and how they relate to our component's data.
-* The thing is, `props` represent data that will be the same every time our component is rendered. What about data in our application that may change depending on user action?
+* The thing is, `props` represent data that will be the same for the entire life of a given component. What about data in our application that may change depending on user action?
 * That's where `state` comes in...
 
 Values stored in a component's state are mutable attributes.
-* Like properties, we can access state values using `this.state.val`
+* Like properties, we can access state values, `val` for example, using `this.state.val`
 * Setting up and modifying state is not as straightforward as properties. It involves explicitly declaring the mutation, and then defining methods to define how to update our state....
 
 Lets implement state in our earlier `Hello` example by incorporating a counter into our greeting.
