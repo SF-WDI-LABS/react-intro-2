@@ -184,10 +184,29 @@ class Hello extends Component {
 
 Whenever we run `.setState`, our component does a "diff", comparing the Virtual DOM node with the updated state to the current DOM. It only replaces the current DOM with parts that have changed.
 
+## Structuring an application
+
+Imagine building a clone of YouTube in React. You might structure components something like this:
+
+![image](https://user-images.githubusercontent.com/6520345/28842533-dd587240-76b2-11e7-966c-6f1eb402b4e7.png)
+
+This structure could be reenvisioned as a "family tree" like this one:
+
+![image](https://user-images.githubusercontent.com/6520345/28844948-3d1033fa-76bb-11e7-8958-d841a0671d2c.png)
+
+Take some time to identify the necessary flow of data. Where does the information come into the application? What information do specific components need to share?
+
+
+#### Downward data flow
+
+In React, every component will have props. We can use props to take in data from "parent" components. 
+
+Because state can change, we want to have as few components holding their state as possible. Only the most parent component should be responsible for fetching data and holding it in its state. That parent component should then distribute that data downward to its child components.
+
 
 ## Closing
 
-React, like Angular, is a powerful web framework that allows fast rendering and is a front-end tool. It works mainly in the "views" layer. It is meant to maintain readability, reusability, and performance.
+React is a powerful web framework that allows fast rendering and is a front-end tool. It works mainly in the "views" layer. It is meant to maintain readability, reusability, and performance.
 
 ### Additional Reading
 
